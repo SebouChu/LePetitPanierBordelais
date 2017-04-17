@@ -1,0 +1,6 @@
+<% content_for :pagetitle do %>Marchés<% end %>
+<% content_for :pagename do %>Nos marchés<% end %>
+
+<% @marches.each do |m| %>
+<p><%= m.name %> | <%= link_to "Voir", service_path(m) %></p>
+<% end %>

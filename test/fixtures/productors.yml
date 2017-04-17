@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  typeprod: MyString
+  name: MyString
+  products: MyText
+  wineapp: MyString
+  onsite: MyText
+  market: MyText
+  amap: MyText
+  other: MyText
+
+two:
+  typeprod: MyString
+  name: MyString
+  products: MyText
+  wineapp: MyString
+  onsite: MyText
+  market: MyText
+  amap: MyText
+  other: MyText

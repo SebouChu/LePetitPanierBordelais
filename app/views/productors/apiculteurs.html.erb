@@ -1,0 +1,6 @@
+<% content_for :pagetitle do %>Apiculteurs<% end %>
+<% content_for :pagename do %>Nos apiculteurs<% end %>
+
+<% @apiculteurs.each do |a| %>
+<p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
+<% end %>

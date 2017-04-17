@@ -1,0 +1,6 @@
+<% content_for :pagetitle do %>Maraîchers<% end %>
+<% content_for :pagename do %>Nos maraîchers<% end %>
+
+<% @maraichers.each do |m| %>
+<p><%= m.name %> | <%= link_to "Voir", productor_path(m) %></p>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  typeserv: MyString
+  name: MyString
+  address: MyText
+
+two:
+  typeserv: MyString
+  name: MyString
+  address: MyText

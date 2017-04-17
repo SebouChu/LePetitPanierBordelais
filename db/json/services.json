@@ -1,0 +1,177 @@
+[{
+  "typeserv": "mar",
+  "name": "Le Magasin G\u00e9n\u00e9ral",
+  "address": "Darwin, Caserne Niel, 87 quai des Queyries, 33000 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "La Compagnie Fermi\u00e8re \u2013 M\u00e9rignac",
+  "address": "10 Avenue Jean Perrin, 33700 M\u00e9rignac "
+}, {
+  "typeserv": "mar",
+  "name": "La Compagnie Fermi\u00e8re \u2013 Gradignan",
+  "address": "6 All\u00e9e Megevie, 33170 Gradignan"
+}, {
+  "typeserv": "mar",
+  "name": "La Recharge",
+  "address": "38 Rue Sainte-Colombe, 33000 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "Gastronomik",
+  "address": "113 Rue du V\u00e9lodrome, 33200 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "Biocoop Bordeaux Pasteur",
+  "address": "40 Cours Pasteur, 33000 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "Biocoop Caud\u00e9ran",
+  "address": "48 Avenue du G\u00e9n\u00e9ral Leclerc, 33200 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "Biocoop Chartrons",
+  "address": "6 Rue Sicard, 33000 Bordeaux"
+}, {
+  "typeserv": "mar",
+  "name": "Biocoop Gambetta",
+  "address": "27 Rue Juda\u00efque, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "BLISSS ",
+  "address": "98 Avenue de Magudas, 33700 M\u00e9rignac"
+}, {
+  "typeserv": "res",
+  "name": "Bistrot L'Exploit",
+  "address": "16 Rue de la Cour des Aides, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Pressoir d'Argent",
+  "address": "Place de la Com\u00e9die, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Restaurant C\u00f4t\u00e9 Rue",
+  "address": "14 Rue Paul Louis Lande, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Tante Charlotte",
+  "address": "7 Rue des Bahutiers, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Garopapilles",
+  "address": "62 Rue Abb\u00e9 de l'\u00c9p\u00e9e, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "La Soupe au Caillou",
+  "address": "6a Place du Maucaillou, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Restaurant Racines",
+  "address": "59 Rue Georges Bonnac, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "La P'tite Brasserie",
+  "address": "127 Rue Georges Bonnac, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Bouchon Bordelais",
+  "address": "2 Rue Courbin, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Pavillon des Boulevards",
+  "address": "120 Rue de la Croix-de-Seguey, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "La Maison du Pata Negra",
+  "address": "Place des Capucins, 33800 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Bistrot de France",
+  "address": "1 Rue du B\u00e9arn, 33600 Pessac"
+}, {
+  "typeserv": "res",
+  "name": "Le coin des copains",
+  "address": "1 Quai de Bacalan, 33300 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Davoli",
+  "address": "13 Rue des Bahutiers, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "L'encoche",
+  "address": "11 Rue de la Devise, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Croc-Loup",
+  "address": "35 Rue du Loup, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Raviolon",
+  "address": "20 Rue du Palais Gallien, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Glouton le Bistrot",
+  "address": "15 Rue des Fr\u00e8res Bonie, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "DOSE Posologie Addictive",
+  "address": "33 Quai Richelieu, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Kitchen Garden",
+  "address": "22 Rue Sainte-Colombe, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "La Cuisine de Johanna",
+  "address": "44 Cours Anatole France, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le p'tit chez moi",
+  "address": "46 Rue Notre Dame, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Greedy",
+  "address": "62 Rue du H\u00e2, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Rest'O",
+  "address": "16 Quai de Bacalan, 33300 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Cosmopolis",
+  "address": "15 Rue Saint-Fran\u00e7ois, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "O'Txiki",
+  "address": "2 Bis Rue de Cursol, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le P'tit Bio",
+  "address": "273 Cours de l'Argonne, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Petit Grain",
+  "address": "3 Place Pierre Jacques Dormoy, 33800 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Label Terre",
+  "address": "2 Cours d'Alsace-et-Lorraine, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Darwin \u00c9co-syst\u00e8me",
+  "address": "87 Quai des Queyries, 33100 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Smart Green Corner",
+  "address": "18 Rue Castelnau d'Auros, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Taquin",
+  "address": "1 Quai Sainte-Croix, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "Le Magasin G\u00e9n\u00e9ral",
+  "address": "Darwin, Caserne Niel, 87 quai des Queyries, 33000 Bordeaux"
+}, {
+  "typeserv": "res",
+  "name": "La Belle Campagne",
+  "address": "15 Rue des Bahutiers, 33000 Bordeaux"
+}]

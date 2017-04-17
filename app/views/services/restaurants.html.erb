@@ -1,0 +1,6 @@
+<% content_for :pagetitle do %>Restaurants<% end %>
+<% content_for :pagename do %>Nos restaurants<% end %>
+
+<% @restaurants.each do |r| %>
+<p><%= r.name %> | <%= link_to "Voir", service_path(r) %></p>
+<% end %>

@@ -1,0 +1,6 @@
+<% content_for :pagetitle do %>Viticulteurs<% end %>
+<% content_for :pagename do %>Nos viticulteurs<% end %>
+
+<% @viticulteurs.each do |v| %>
+<p><%= v.name %> | <%= link_to "Voir", productor_path(v) %></p>
+<% end %>
