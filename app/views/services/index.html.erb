@@ -1,14 +1,16 @@
 <% content_for :pagetitle do %>Services<% end %>
 <% content_for :pagename do %>Nos services<% end %>
 
-<h2>Nos derniers restaurants</h2>
-<% @restaurants.each do |r| %>
-<p><%= r.name %> | <%= link_to "Voir", service_path(r) %></p>
-<% end %>
-<p><%= link_to "Voir plus", restaurants_path %></p>
+<div id="services">
+  <h3>Nos derniers restaurants</h3>
+  <% @restaurants.each do |r| %>
+  <p><%= r.name %> | <%= link_to "Voir", service_path(r) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", restaurants_path, class:"red-button" %></p>
 
-<h2>Nos derniers marchés</h2>
-<% @marches.each do |m| %>
-<p><%= m.name %> | <%= link_to "Voir", service_path(m) %></p>
-<% end %>
-<p><%= link_to "Voir plus", marches_path %></p>
+  <h3>Nos derniers marchés</h3>
+  <% @marches.each do |m| %>
+  <p><%= m.name %> | <%= link_to "Voir", service_path(m) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", marches_path, class:"red-button" %></p>
+</div>

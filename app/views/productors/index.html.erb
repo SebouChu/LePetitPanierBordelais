@@ -1,32 +1,34 @@
 <% content_for :pagetitle do %>Producteurs<% end %>
 <% content_for :pagename do %>Nos producteurs<% end %>
 
-<h2>Nos derniers apiculteurs</h2>
-<% @apiculteurs.each do |a| %>
-<p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
-<% end %>
-<p><%= link_to "Voir plus", apiculteurs_path %></p>
+<div id="producteurs">
+  <h3>Nos derniers apiculteurs</h3>
+  <% @apiculteurs.each do |a| %>
+  <p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", apiculteurs_path, class:"red-button"%></p>
 
-<h2>Nos derniers éleveurs</h2>
-<% @eleveurs.each do |e| %>
-<p><%= e.name %> | <%= link_to "Voir", productor_path(e) %></p>
-<% end %>
-<p><%= link_to "Voir plus", eleveurs_path %></p>
+  <h3>Nos derniers éleveurs</h3>
+  <% @eleveurs.each do |e| %>
+  <p><%= e.name %> | <%= link_to "Voir", productor_path(e) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", eleveurs_path, class:"red-button"%></p>
 
-<h2>Nos derniers horticulteurs</h2>
-<% @horticulteurs.each do |h| %>
-<p><%= h.name %> | <%= link_to "Voir", productor_path(h) %></p>
-<% end %>
-<p><%= link_to "Voir plus", horticulteurs_path %></p>
+  <h3>Nos derniers horticulteurs</h3>
+  <% @horticulteurs.each do |h| %>
+  <p><%= h.name %> | <%= link_to "Voir", productor_path(h) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", horticulteurs_path, class:"red-button"%></p>
 
-<h2>Nos derniers maraîchers</h2>
-<% @maraichers.each do |m| %>
-<p><%= m.name %> | <%= link_to "Voir", productor_path(m) %></p>
-<% end %>
-<p><%= link_to "Voir plus", maraichers_path %></p>
+  <h3>Nos derniers maraîchers</h3>
+  <% @maraichers.each do |m| %>
+  <p><%= m.name %> | <%= link_to "Voir", productor_path(m) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", maraichers_path, class:"red-button"%></p>
 
-<h2>Nos derniers viticulteurs</h2>
-<% @viticulteurs.each do |v| %>
-<p><%= v.name %> | <%= link_to "Voir", productor_path(v) %></p>
-<% end %>
-<p><%= link_to "Voir plus", viticulteurs_path %></p>
+  <h3>Nos derniers viticulteurs</h3>
+  <% @viticulteurs.each do |v| %>
+  <p><%= v.name %> | <%= link_to "Voir", productor_path(v) %></p>
+  <% end %>
+  <p><%= link_to "Voir plus", viticulteurs_path, class:"red-button"%></p>  
+</div>
