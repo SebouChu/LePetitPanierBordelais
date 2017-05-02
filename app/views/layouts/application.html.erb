@@ -23,19 +23,36 @@
     <meta property="og:email" content="contact@lepetitpanierbordelais.fr">
     <link rel="canonical" href="http://lepetitpanierbordelais.fr/" />
     <link rel="publisher" href="https://plus.google.com/u/1/108017467012918746077" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
     <!-- <link rel="shortcut icon" href="images/logo.png"> -->
   </head>
 
   <body>
     <%= image_tag 'logo.png', alt:"logo", id:"logo" %>
-    <h2>La qualité saine et locale, pour le plaisir des plus rafinés.</h2>
+    <p id="baseline">La qualité saine et locale, pour le plaisir des plus rafinés.</p>
 
     <div class="body-content">
-      <p id="header"><%= link_to "Accueil", root_path %> <span>|</span> <%= link_to "Producteurs", productors_path %> <span>|</span> <%= link_to "Services", services_path %> <span>|</span> <%= link_to "À propos", about_path %> <span>|</span> <%= link_to "Contact", contact_path %></p>
+      <div id="header">
+        <%= link_to "Accueil", root_path, class:'menu-item' %> <span>|</span> <!-- menu-item's class is to be able to make an active's class switch on click, cf.js -->
+        <%= link_to "Producteurs", productors_path, class:'menu-item' %> <span>|</span>
+        <%= link_to "Services", services_path, class:'menu-item' %> <span>|</span>
+        <%= link_to "À propos", about_path, class:'menu-item' %><span>|</span>
+        <%= link_to "Contact", contact_path, class:'menu-item' %>
+      </div>
 
       <h1><%= yield :pagename %></h1>
 
       <%= yield %>
     </div>
+    <footer>
+      <h3>Contactez nous</h3>
+      <hr><hr><br>
+      <p> 1 rue Jacques Ellul, 33000 Bordeaux </p>
+      <p> lepetitpanierbordelais@contact.fr </p>
+      <p> 06 70 98 67 88 </p>
+    </footer>
   </body>
 </html>

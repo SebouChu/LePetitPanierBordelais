@@ -14,3 +14,19 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//
+
+// var item = document.querySelectorAll(".menu-item");
+//
+// console.log(item.length);
+//
+// for(var i=0; i < item.length; i++){
+//   (function(){
+//     var r = i;
+//     item[r].addEventListener("click", function(){ //DISPLAY POPUP
+//       console.log('ok');
+//       item.className = "menu-item";
+//       item[r].className += "active";
+//     }, false);
+//   });
+// }
