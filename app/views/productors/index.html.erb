@@ -1,7 +1,7 @@
 <% content_for :pagetitle do %>Producteurs<% end %>
 <% content_for :pagename do %>Nos producteurs<% end %>
 
-<div id="producteurs">
+<div id="producteurs-index">
   <h3>Nos derniers apiculteurs</h3>
   <% @apiculteurs.each do |a| %>
   <p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
@@ -30,5 +30,5 @@
   <% @viticulteurs.each do |v| %>
   <p><%= v.name %> | <%= link_to "Voir", productor_path(v) %></p>
   <% end %>
-  <p><%= link_to "Voir plus", viticulteurs_path, class:"red-button"%></p>  
+  <p><%= link_to "Voir plus", viticulteurs_path, class:"red-button"%></p>
 </div>

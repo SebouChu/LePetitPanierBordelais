@@ -11,6 +11,7 @@
    background-color: black;
    background-image: image-url("main-bg.png");
    background-repeat: no-repeat;
+   background-size: contain;
    font-family: $main-font;
    font-weight: lighter;
  }
@@ -51,7 +52,6 @@
  .body-content {
    width:74%;
    margin:auto;
-  //  text-align: center;
    display: flex;
    flex-direction: column;
    justify-content: center;
