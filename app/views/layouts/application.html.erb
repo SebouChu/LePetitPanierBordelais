@@ -5,13 +5,37 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+    <meta name="description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
+    <meta name="keywords" content="petit, panier, bordelais, bordeaux, sain, local, fruits, legumes, manger, marche, restaurant, producteur, produit, frais, ecolo, agriculteur, itineraire, balade, decouverte, bio">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@LePetitPanierB">
+    <meta name="twitter:title" content="Le Petit Panier Bordelais">
+    <meta name="twitter:description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
+    <meta name="twitter:image" content="http://lepetitpanierbordelais.fr/images/logo.png">
+    <meta name="twitter:image:alt" content="Le Petit Panier Bordelais, les producteurs locaux bordelais.">
+    <meta property="og:title" content="Le Petit Panier Bordelais">
+    <meta property="og:type" content="producteur">
+    <meta property="og:url" content="https://lepetitpanierbordelais.fr/">
+    <meta property="og:image" content="http://lepetitpanierbordelais.fr/images/logo.png">
+    <meta property="og:description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
+    <meta property="og:email" content="contact@lepetitpanierbordelais.fr">
+    <link rel="canonical" href="http://lepetitpanierbordelais.fr/" />
+    <link rel="publisher" href="https://plus.google.com/u/1/108017467012918746077" />
+    <!-- <link rel="shortcut icon" href="images/logo.png"> -->
   </head>
 
   <body>
-    <h1><%= yield :pagename %></h1>
+    <%= image_tag 'logo.png', alt:"logo", id:"logo" %>
+    <h2>La qualité saine et locale, pour le plaisir des plus rafinés.</h2>
 
-    <p><%= link_to "Accueil", root_path %> | <%= link_to "Producteurs", productors_path %> | <%= link_to "Services", services_path %> | <%= link_to "À propos", about_path %> | <%= link_to "Contact", contact_path %></p>
+    <div class="body-content">
+      <p id="header"><%= link_to "Accueil", root_path %> <span>|</span> <%= link_to "Producteurs", productors_path %> <span>|</span> <%= link_to "Services", services_path %> <span>|</span> <%= link_to "À propos", about_path %> <span>|</span> <%= link_to "Contact", contact_path %></p>
 
-    <%= yield %>
+      <h1><%= yield :pagename %></h1>
+
+      <%= yield %>
+    </div>
   </body>
 </html>

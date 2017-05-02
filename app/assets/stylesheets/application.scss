@@ -1,0 +1,78 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ $red: #C62134;
+ $main-font: 'Playfair Display';
+
+ html {
+   margin:0;
+   color:black;
+   background-color: black;
+   background-image: image-url("main-bg.png");
+   font-family: $main-font;
+ }
+
+ a, a:visited, a:focus {
+   text-decoration: none;
+   color:black;
+   -webkit-transition: 0.3s;
+   -o-transition: 0.3s;
+   transition: 0.3s;
+  &:hover, &.active{
+    color:$red;
+  }
+ }
+
+ h2 {
+   font-family: 'Snell Roundhand';
+   font-style: italic;
+   font-size: 2em;
+   text-align: center;
+   font-weight: 400;
+   letter-spacing: 2px;
+   margin-bottom: 5em;
+   color:white;
+ }
+
+ #logo {
+   display: flex;
+   margin:12em auto;
+   min-width: 20em;
+   width:30%;
+ }
+
+ .body-content {
+   width:75%;
+   margin:auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #FCFBF7;
+   padding:2em 3em;
+
+   #header {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     font-size: 1.3em;
+     margin:1em 0 3em;
+
+     span {
+       color:$red;
+     }
+   }
+ }
