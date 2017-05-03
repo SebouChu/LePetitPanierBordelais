@@ -4,7 +4,6 @@
     <title><%= yield :pagetitle %> - LPPB</title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta charset="utf-8">
     <meta name="description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
     <meta name="keywords" content="petit, panier, bordelais, bordeaux, sain, local, fruits, legumes, manger, marche, restaurant, producteur, produit, frais, ecolo, agriculteur, itineraire, balade, decouverte, bio">
@@ -38,8 +37,8 @@
     <div class="body-content">
       <div id="header">
         <%= link_to "Accueil", root_path, class:'menu-item' %> <span>|</span> <!-- menu-item's class is to be able to make an active's class switch on click, cf.js -->
-        <%= link_to "Producteurs", productors_path, class:'menu-item' %> <span>|</span>
         <%= link_to "Services", services_path, class:'menu-item' %> <span>|</span>
+        <%= link_to "Producteurs", productors_path, class:'menu-item' %> <span>|</span>
         <%= link_to "À propos", about_path, class:'menu-item' %><span>|</span>
         <%= link_to "Contact", contact_path, class:'menu-item' %>
       </div>
@@ -47,6 +46,7 @@
       <h1><%= yield :pagename %></h1>
 
       <%= yield %>
+
     </div>
     <footer>
       <h3>Contactez nous</h3>
@@ -55,5 +55,7 @@
       <p> lepetitpanierbordelais@contact.fr </p>
       <p> 06 70 98 67 88 </p>
     </footer>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </body>
 </html>

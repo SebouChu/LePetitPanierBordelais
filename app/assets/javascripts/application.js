@@ -16,17 +16,17 @@
 //= require_tree .
 //
 
-// var item = document.querySelectorAll(".menu-item");
-//
-// console.log(item.length);
-//
-// for(var i=0; i < item.length; i++){
-//   (function(){
-//     var r = i;
-//     item[r].addEventListener("click", function(){ //DISPLAY POPUP
-//       console.log('ok');
-//       item.className = "menu-item";
-//       item[r].className += "active";
-//     }, false);
-//   });
-// }
+
+var items = document.querySelectorAll(".menu-item");
+var active = document.querySelector('a.menu-item.active');
+
+for(var i=0; i < items.length; i++){
+  (function(){
+    var r = i;
+    items[r].addEventListener("click", function(){ //DISPLAY POPUP
+      console.log('ok');
+      active.className = "menu-item";
+      items[r].className = "menu-item active";
+    }, true);
+  });
+};
