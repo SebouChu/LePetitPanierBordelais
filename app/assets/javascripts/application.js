@@ -15,6 +15,15 @@
 //= require turbolinks
 //= require_tree .
 //
+
+
+/////////////////////////////
+///                       ///
+///        Carousel       ///
+///                       ///
+/////////////////////////////
+
+
 var initCarousel = function() {
   var carousel = new Carousel(document.querySelector("#foo"), {
   autoload : true,
@@ -23,10 +32,35 @@ var initCarousel = function() {
   var carousel2 = new Carousel(document.querySelector("#foo-2"), {
   autoload : true,
   interval : 3000
-  });
+});
+  var carousel3 = new Carousel(document.querySelector("#foo-3"), {
+  autoload : true,
+  interval : 3000
+});
+  var carousel4 = new Carousel(document.querySelector("#foo-4"), {
+  autoload : true,
+  interval : 3000
+});
+  var carousel5 = new Carousel(document.querySelector("#foo-5"), {
+  autoload : true,
+  interval : 3000
+});
+  var carousel6 = new Carousel(document.querySelector("#foo-6"), {
+  autoload : true,
+  interval : 3000
+});
+  var carousel7 = new Carousel(document.querySelector("#foo-7"), {
+  autoload : true,
+  interval : 3000
+});
 
   carousel.launch(); //Lance le carousel
   carousel2.launch();
+  carousel3.launch();
+  carousel4.launch();
+  carousel5.launch();
+  carousel6.launch();
+  carousel7.launch();
 }
 
 var menuLoaded = function(){

@@ -6,6 +6,7 @@
 <!-- RESTAURANTS -->
 
   <h3>Nos derniers restaurants</h3>
+  
   <div class="carousel" id="foo">
      <% @restaurants.each do |r| %>
        <div class="item-carousel" data-animation="opacity">
@@ -32,6 +33,4 @@
 
   <p><%= link_to "Voir plus", marches_path, class:"red-button" %></p>
 
-
-  <script> initCarousel(); </script>
 </div>

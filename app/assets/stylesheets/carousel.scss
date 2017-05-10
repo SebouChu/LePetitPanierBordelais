@@ -16,6 +16,26 @@
     float: left;
     z-index: 3;
     width: 100%;
+    display: flex;
+    justify-content: center;
+      p {
+        letter-spacing: 2px;
+        font-weight: bold;
+        position: absolute;
+        margin:0;
+        text-align: center;
+        font-size:2.3em;
+        color:white;
+        top:27%;
+      }
+      img {
+        width:100%;
+        cursor:pointer;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        filter: contrast(0.7);
+      }
     }
   .carousel .leftSelector {
     width: 10%;

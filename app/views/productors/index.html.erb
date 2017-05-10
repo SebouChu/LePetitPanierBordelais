@@ -3,9 +3,11 @@
 
 <div id="producteurs-index">
   <h3>Nos derniers apiculteurs</h3>
+
   <% @apiculteurs.each do |a| %>
   <p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
   <% end %>
+  
   <p><%= link_to "Voir plus", apiculteurs_path, class:"red-button"%></p>
 
   <h3>Nos derniers éleveurs</h3>
