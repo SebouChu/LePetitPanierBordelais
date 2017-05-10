@@ -86,19 +86,3 @@ var menuLoaded = function(){
     array[0].className = 'menu-item current';
   }
 };
-
-
-
-
-// var active = document.querySelector('a.menu-item.current');
-//
-// var changeActive = function(){
-//   items[i].addEventListener("click", function(){ //DISPLAY POPUP
-//     active.className = "menu-item";
-//     items[i].className = "menu-item current";
-//   }, true);
-// }
-//
-// for(var i=0; i < items.length; i++){
-//   changeActive();
-// };

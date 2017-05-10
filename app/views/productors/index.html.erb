@@ -4,33 +4,66 @@
 <div id="producteurs-index">
   <h3>Nos derniers apiculteurs</h3>
 
-  <% @apiculteurs.each do |a| %>
-  <p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
-  <% end %>
-  
+  <div class="carousel" id="foo-3">
+    <% @apiculteurs.each do |a| %>
+    <div class="item-carousel" data-animation="opacity">
+      <%= link_to image_tag('apiculteurs.jpg'), productor_path(a) %>
+      <p><%= a.name %></p>
+    </div>
+    <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", apiculteurs_path, class:"red-button"%></p>
 
   <h3>Nos derniers éleveurs</h3>
-  <% @eleveurs.each do |e| %>
-  <p><%= e.name %> | <%= link_to "Voir", productor_path(e) %></p>
-  <% end %>
+
+  <div class="carousel" id="foo-4">
+    <% @eleveurs.each do |e| %>
+    <div class="item-carousel" data-animation="opacity">
+      <%= link_to image_tag('eleveurs.jpg'), productor_path(e) %>
+      <p><%= e.name %></p>
+    </div>
+    <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", eleveurs_path, class:"red-button"%></p>
 
   <h3>Nos derniers horticulteurs</h3>
-  <% @horticulteurs.each do |h| %>
-  <p><%= h.name %> | <%= link_to "Voir", productor_path(h) %></p>
-  <% end %>
+
+  <div class="carousel" id="foo-5">
+    <% @horticulteurs.each do |h| %>
+    <div class="item-carousel" data-animation="opacity">
+      <%= link_to image_tag('horticulteurs.jpg'), productor_path(h) %>
+      <p><%= h.name %></p>
+    </div>
+    <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", horticulteurs_path, class:"red-button"%></p>
 
   <h3>Nos derniers maraîchers</h3>
-  <% @maraichers.each do |m| %>
-  <p><%= m.name %> | <%= link_to "Voir", productor_path(m) %></p>
-  <% end %>
+
+  <div class="carousel" id="foo-6">
+    <% @maraichers.each do |m| %>
+    <div class="item-carousel" data-animation="opacity">
+      <%= link_to image_tag('maraichers.jpg'), productor_path(m) %>
+      <p><%= m.name %></p>
+    </div>
+    <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", maraichers_path, class:"red-button"%></p>
 
   <h3>Nos derniers viticulteurs</h3>
-  <% @viticulteurs.each do |v| %>
-  <p><%= v.name %> | <%= link_to "Voir", productor_path(v) %></p>
-  <% end %>
+
+  <div class="carousel" id="foo-7">
+    <% @viticulteurs.each do |v| %>
+    <div class="item-carousel" data-animation="opacity">
+      <%= link_to image_tag('viticulteurs.jpg'), productor_path(v) %>
+      <p><%= v.name %></p>
+    </div>
+    <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", viticulteurs_path, class:"red-button"%></p>
 </div>
