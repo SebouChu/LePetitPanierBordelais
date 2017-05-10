@@ -59,16 +59,20 @@
 
 
  #logo,#logo2 {
+   img{
    display: flex;
    margin:12em auto;
    min-width: 20em;
    width:30%;
+   }
  }
 
 #logo2 {
+  img {
   margin:4em auto;
   width:5%;
   min-width: 10em;
+ }
 }
 
 
