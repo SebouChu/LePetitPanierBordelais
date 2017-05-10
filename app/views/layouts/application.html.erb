@@ -2,6 +2,8 @@
 <html>
   <head>
     <title><%= yield :pagetitle %> - LPPB</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <meta charset="utf-8">
@@ -23,8 +25,6 @@
     <link rel="canonical" href="http://lepetitpanierbordelais.fr/" />
     <link rel="publisher" href="https://plus.google.com/u/1/108017467012918746077" />
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
 
     <!-- <link rel="shortcut icon" href="images/logo.png"> -->
   </head>
@@ -32,7 +32,7 @@
   <body>
     <%= image_tag 'logo.png', alt:"logo", id:"logo" %>
     <%= image_tag 'right-arrow.png', alt:'scoll-arrow', id:"arrow"%>
-    <p id="baseline">La qualité saine et locale, pour le plaisir des plus rafinés.</p>
+    <p id="baseline">La qualité saine et locale, pour le plaisir des plus raffinés.</p>
 
     <div class="body-content">
       <div id="header">
@@ -52,7 +52,7 @@
       <h3>Contactez nous</h3>
       <hr><hr><br>
       <p> 1 rue Jacques Ellul, 33000 Bordeaux </p>
-      <p> lepetitpanierbordelais@contact.fr </p>
+      <p> contact@lepetitpanierbordelais.fr </p>
       <p> 06 70 98 67 88 </p>
     </footer>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
