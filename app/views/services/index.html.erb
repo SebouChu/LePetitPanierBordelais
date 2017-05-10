@@ -2,15 +2,36 @@
 <% content_for :pagename do %>Nos services<% end %>
 
 <div id="services-index">
+
+<!-- RESTAURANTS -->
+
   <h3>Nos derniers restaurants</h3>
-  <% @restaurants.each do |r| %>
-  <p><%= r.name %> | <%= link_to "Voir", service_path(r) %></p>
-  <% end %>
+  <div class="carousel" id="foo">
+     <% @restaurants.each do |r| %>
+       <div class="item-carousel" data-animation="opacity">
+         <%= link_to image_tag('bread.jpg'), service_path(r) %>
+         <p><%= r.name %></p>
+       </div>
+     <%end%>
+  </div>
+
   <p><%= link_to "Voir plus", restaurants_path, class:"red-button" %></p>
 
+<!-- MARCHE -->
+
   <h3>Nos derniers marchés</h3>
-  <% @marches.each do |m| %>
-  <p><%= m.name %> | <%= link_to "Voir", service_path(m) %></p>
-  <% end %>
+
+  <div class="carousel" id="foo-2">
+      <% @marches.each do |m| %>
+        <div class="item-carousel" data-animation="opacity">
+          <%= link_to image_tag('paysans.jpg'), service_path(m) %>
+          <p><%= m.name %></p>
+        </div>
+      <% end %>
+  </div>
+
   <p><%= link_to "Voir plus", marches_path, class:"red-button" %></p>
+
+
+  <script> initCarousel(); </script>
 </div>

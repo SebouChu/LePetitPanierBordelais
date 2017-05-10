@@ -30,17 +30,23 @@
   </head>
 
   <body>
-    <%= image_tag 'logo.png', alt:"logo", id:"logo" %>
-    <%= image_tag 'right-arrow.png', alt:'scoll-arrow', id:"arrow"%>
-    <p id="baseline">La qualité saine et locale, pour le plaisir des plus raffinés.</p>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <% if current_page?(controller: 'statics', action: "index") %>
+      <%= image_tag 'logo.png', alt:"logo", id:"logo" %>
+      <%= image_tag 'right-arrow.png', alt:'scoll-arrow', id:"arrow"%>
+      <p id="baseline">La qualité saine et locale, pour le plaisir des plus raffinés.</p>
+    <% else %>
+      <%= image_tag 'logo.png', alt:"logo", id:"logo2" %>
+    <%end%>
 
     <div class="body-content">
       <div id="header">
-        <%= link_to "Accueil", root_path, class:'menu-item' %> <span>|</span> <!-- menu-item's class is to be able to make an active's class switch on click, cf.js -->
-        <%= link_to "Services", services_path, class:'menu-item' %> <span>|</span>
-        <%= link_to "Producteurs", productors_path, class:'menu-item' %> <span>|</span>
-        <%= link_to "À propos", about_path, class:'menu-item' %><span>|</span>
-        <%= link_to "Contact", contact_path, class:'menu-item' %>
+        <%= link_to "Accueil", root_path, class:'menu-item', id:"accueil-item" %> <span>|</span> <!-- menu-item's class is to be able to make an active's class switch on click, cf.js -->
+        <%= link_to "Services", services_path, class:'menu-item', id:"services-item" %> <span>|</span>
+        <%= link_to "Producteurs", productors_path, class:'menu-item', id:"producteurs-item" %> <span>|</span>
+        <%= link_to "À propos", about_path, class:'menu-item', id:"about-item" %><span>|</span>
+        <%= link_to "Contact", contact_path, class:'menu-item', id:"contact-item" %>
       </div>
 
       <h1><%= yield :pagename %></h1>
@@ -55,7 +61,8 @@
       <p> contact@lepetitpanierbordelais.fr </p>
       <p> 06 70 98 67 88 </p>
     </footer>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script>menuLoaded();</script>
 
   </body>
 </html>

@@ -15,18 +15,56 @@
 //= require turbolinks
 //= require_tree .
 //
-
-
-var items = document.querySelectorAll(".menu-item");
-var active = document.querySelector('a.menu-item.active');
-
-for(var i=0; i < items.length; i++){
-  (function(){
-    var r = i;
-    items[r].addEventListener("click", function(){ //DISPLAY POPUP
-      console.log('ok');
-      active.className = "menu-item";
-      items[r].className = "menu-item active";
-    }, true);
+var initCarousel = function() {
+  var carousel = new Carousel(document.querySelector("#foo"), {
+  autoload : true,
+  interval : 3000
+});
+  var carousel2 = new Carousel(document.querySelector("#foo-2"), {
+  autoload : true,
+  interval : 3000
   });
+
+  carousel.launch(); //Lance le carousel
+  carousel2.launch();
+}
+
+var menuLoaded = function(){
+  var section = window.location.href.match(/[^\/]\/([a-z]+)\/?/);
+  var array = document.querySelectorAll(".menu-item");
+
+  if (section) {
+    switch (section[1]) {
+      case 'services':
+          array[1].className = 'menu-item current';
+        break;
+      case 'producteurs':
+          array[2].className = 'menu-item current';
+        break;
+      case 'about':
+          array[3].className = 'menu-item current';
+        break;
+      case 'contact':
+          array[4].className = 'menu-item current';
+        break;
+    }
+  } else {
+    array[0].className = 'menu-item current';
+  }
 };
+
+
+
+
+// var active = document.querySelector('a.menu-item.current');
+//
+// var changeActive = function(){
+//   items[i].addEventListener("click", function(){ //DISPLAY POPUP
+//     active.className = "menu-item";
+//     items[i].className = "menu-item current";
+//   }, true);
+// }
+//
+// for(var i=0; i < items.length; i++){
+//   changeActive();
+// };

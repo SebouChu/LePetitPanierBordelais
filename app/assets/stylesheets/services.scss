@@ -15,6 +15,7 @@
    padding-top:0.8em;
    margin:auto;
    width:40%;
+   margin-bottom: 1em;
   }
   .red-button {
     display: block;
@@ -25,7 +26,7 @@
     font-size: 0.8em;
     width:12em;
     text-align: center;
-    margin:2em auto 0;
+    margin:2em auto 3em;
     border:1px solid transparent;
     -webkit-transition: 0.4s;
     -o-transition: 0.4s;
@@ -34,6 +35,30 @@
       background-color: white;
       border: 1px solid $red;
       color:$red;
+    }
+  }
+  .carousel {
+    .item-carousel {
+      display: flex;
+      justify-content: center;
+      p {
+        letter-spacing: 2px;
+        font-weight: bold;
+        position: absolute;
+        margin:0;
+        text-align: center;
+        font-size:2.3em;
+        color:white;
+        top:27%;
+      }
+      img {
+        width:100%;
+        cursor:pointer;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        filter: contrast(0.7);
+      }
     }
   }
 }
