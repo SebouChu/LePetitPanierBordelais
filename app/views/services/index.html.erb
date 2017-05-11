@@ -7,7 +7,7 @@
 
   <h3>Nos derniers restaurants</h3>
 
-  <div class="carousel" id="foo">
+  <div class="carousel" id="carousel-restos">
      <% @restaurants.each do |r| %>
        <div class="item-carousel" data-animation="opacity">
          <% if r.image %>
@@ -26,7 +26,7 @@
 
   <h3>Nos derniers marchés</h3>
 
-  <div class="carousel" id="foo-2">
+  <div class="carousel" id="carousel-marches">
       <% @marches.each do |m| %>
         <div class="item-carousel" data-animation="opacity">
           <% if m.image %>
