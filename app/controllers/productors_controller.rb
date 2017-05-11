@@ -8,23 +8,23 @@ class ProductorsController < ApplicationController
   end
 
   def apiculteurs
-    @apiculteurs = Productor.where(typeprod: "api")
+    @apiculteurs = Productor.where(typeprod: "api").limit(6)
   end
 
   def eleveurs
-    @eleveurs = Productor.where(typeprod: "ele")
+    @eleveurs = Productor.where(typeprod: "ele").limit(6)
   end
 
   def horticulteurs
-    @horticulteurs = Productor.where(typeprod: "hor")
+    @horticulteurs = Productor.where(typeprod: "hor").limit(6)
   end
 
   def maraichers
-    @maraichers = Productor.where(typeprod: "mar")
+    @maraichers = Productor.where(typeprod: "mar").limit(6)
   end
 
   def viticulteurs
-    @viticulteurs = Productor.where(typeprod: "vit")
+    @viticulteurs = Productor.where(typeprod: "vit").limit(6)
   end
 
   def show
