@@ -35,13 +35,13 @@
    text-align: center;
  }
 
- a, a:visited, a:focus {
+ a, a:focus,a:visited {
    text-decoration: none;
    color:black;
    -webkit-transition: 0.3s;
    -o-transition: 0.3s;
    transition: 0.3s;
-  &:hover, &.current{
+  &:hover,&.current{
     color:$red;
   }
  }

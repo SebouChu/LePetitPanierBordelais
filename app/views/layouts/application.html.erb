@@ -32,7 +32,8 @@
   <body>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <% if current_page?(controller: 'statics', action: "index") %>
+
+    <% if @biglogo %>
       <%= link_to image_tag('logo.png'), root_path, alt:"logo", id:"logo" %>
       <%= image_tag 'right-arrow.png', alt:'scoll-arrow', id:"arrow"%>
       <p id="baseline">La qualité saine et locale, pour le plaisir des plus raffinés.</p>

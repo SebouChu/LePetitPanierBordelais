@@ -10,7 +10,11 @@
   <div class="carousel" id="foo">
      <% @restaurants.each do |r| %>
        <div class="item-carousel" data-animation="opacity">
+         <% if r.image %>
+         <%= link_to r.image, service_path(r) %>
+         <% else %>
          <%= link_to image_tag('bread.jpg'), service_path(r) %>
+         <% end %>
          <p><%= r.name %></p>
        </div>
      <%end%>
@@ -25,7 +29,11 @@
   <div class="carousel" id="foo-2">
       <% @marches.each do |m| %>
         <div class="item-carousel" data-animation="opacity">
+          <% if m.image %>
+          <%= link_to m.image, service_path(m) %>
+          <% else %>
           <%= link_to image_tag('paysans.jpg'), service_path(m) %>
+          <% end %>
           <p><%= m.name %></p>
         </div>
       <% end %>

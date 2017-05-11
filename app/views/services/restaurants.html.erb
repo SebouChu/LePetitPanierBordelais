@@ -4,7 +4,11 @@
 <div class="services-items" id="service-restau">
   <% @restaurants.each do |r| %>
     <div class="item-container">
+      <% if r.image %>
+      <%= link_to r.image, service_path(r) %>
+      <% else %>
       <%= link_to image_tag('bread.jpg'), service_path(r) %>
+      <% end %>
       <p><%= r.name %></p>
     </div>
   <% end %>

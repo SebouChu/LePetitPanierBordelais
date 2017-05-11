@@ -5,11 +5,11 @@ class ServicesController < ApplicationController
   end
 
   def restaurants
-    @restaurants = Service.where(typeserv: "res").order(created_at: :desc).limit(9)
+    @restaurants = Service.where(typeserv: "res").order(created_at: :desc).limit(8)
   end
 
   def marches
-    @marches = Service.where(typeserv: "mar").order(created_at: :desc).limit(9)
+    @marches = Service.where(typeserv: "mar").order(created_at: :desc).limit(8)
   end
 
   def show
