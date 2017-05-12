@@ -2,6 +2,16 @@
 <% content_for :pagename do %><%= @productor.name %><% end %>
 <%= link_to "Retour", "#", onclick: "history.back()" %>
 
+<% if @productor.image %>
+  <h2>Image</h2>
+  <%= image_tag @productor.image %>
+<%end%>
+
+<% if @productor.content %>
+  <h2>Description</h2>
+  <p><%= @productor.content %></p>
+<%end%>
+
 <h2>Produits</h2>
 <p><%= @productor.products %></p>
 

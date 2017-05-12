@@ -4,3 +4,13 @@
 
 <h2>Adresse</h2>
 <p><%= @service.address %></p>
+
+<% if @service.image %>
+  <h2>Image</h2>
+  <%= image_tag @service.image %>
+<%end%>
+
+<% if @service.content %>
+  <h2>Description</h2>
+  <p><%= @service.content %></p>
+<%end%>
