@@ -5,7 +5,7 @@
   <% @restaurants.each do |r| %>
     <div class="item-container">
       <% if r.image %>
-      <%= link_to r.image, service_path(r) %>
+      <%= link_to image_tag(r.image), service_path(r) %>
       <% else %>
       <%= link_to image_tag('bread.jpg'), service_path(r) %>
       <% end %>

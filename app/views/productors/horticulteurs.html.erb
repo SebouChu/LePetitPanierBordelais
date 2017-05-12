@@ -5,9 +5,9 @@
   <% @horticulteurs.each do |h| %>
     <div class="item-container">
       <% if h.image %>
-      <%= link_to h.image, productor_path(h) %>
+      <%= link_to image_tag(h.image), productor_path(h) %>
       <% else %>
-      <%= link_to image_tag('eleveurs.jpg'), productor_path(h) %>
+      <%= link_to image_tag('horticulteurs.jpg'), productor_path(h) %>
       <% end %>
       <p><%= h.name %></p>
     </div>

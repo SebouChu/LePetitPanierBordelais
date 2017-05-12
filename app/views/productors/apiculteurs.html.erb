@@ -5,7 +5,7 @@
   <% @apiculteurs.each do |a| %>
     <div class="item-container">
       <% if a.image %>
-      <%= link_to a.image, productor_path(a) %>
+      <%= link_to image_tag(a.image), productor_path(a) %>
       <% else %>
       <%= link_to image_tag('apiculteurs.jpg'), productor_path(a) %>
       <% end %>

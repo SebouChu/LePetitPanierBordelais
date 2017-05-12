@@ -5,9 +5,9 @@
   <% @maraichers.each do |m| %>
     <div class="item-container">
       <% if m.image %>
-      <%= link_to m.image, productor_path(m) %>
+      <%= link_to image_tag(m.image), productor_path(m) %>
       <% else %>
-      <%= link_to image_tag('eleveurs.jpg'), productor_path(m) %>
+      <%= link_to image_tag('maraichers.jpg'), productor_path(m) %>
       <% end %>
       <p><%= m.name %></p>
     </div>

@@ -5,7 +5,7 @@
   <% @marches.each do |m| %>
     <div class="item-container">
       <% if m.image %>
-      <%= link_to m.image, service_path(m) %>
+      <%= link_to image_tag(m.image), service_path(m) %>
       <% else %>
       <%= link_to image_tag('paysans.jpg'), service_path(m) %>
       <% end %>
