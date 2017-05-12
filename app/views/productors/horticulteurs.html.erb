@@ -1,6 +1,15 @@
 <% content_for :pagetitle do %>Horticulteurs<% end %>
 <% content_for :pagename do %>Nos horticulteurs<% end %>
 
-<% @horticulteurs.each do |h| %>
-<p><%= h.name %> | <%= link_to "Voir", productor_path(h) %></p>
-<% end %>
+<div class="productor-items" id="produc-hor">
+  <% @horticulteurs.each do |h| %>
+    <div class="item-container">
+      <% if h.image %>
+      <%= link_to h.image, productor_path(h) %>
+      <% else %>
+      <%= link_to image_tag('eleveurs.jpg'), productor_path(h) %>
+      <% end %>
+      <p><%= h.name %></p>
+    </div>
+  <% end %>
+</div>

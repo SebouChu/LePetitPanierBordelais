@@ -1,6 +1,15 @@
 <% content_for :pagetitle do %>Apiculteurs<% end %>
 <% content_for :pagename do %>Nos apiculteurs<% end %>
 
-<% @apiculteurs.each do |a| %>
-<p><%= a.name %> | <%= link_to "Voir", productor_path(a) %></p>
-<% end %>
+<div class="productor-items" id="produc-api">
+  <% @apiculteurs.each do |a| %>
+    <div class="item-container">
+      <% if a.image %>
+      <%= link_to a.image, productor_path(a) %>
+      <% else %>
+      <%= link_to image_tag('apiculteurs.jpg'), productor_path(a) %>
+      <% end %>
+      <p><%= a.name %></p>
+    </div>
+  <% end %>
+</div>

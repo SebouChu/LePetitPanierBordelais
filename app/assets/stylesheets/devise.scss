@@ -1,0 +1,47 @@
+@import "variables";
+
+#login-page {
+  margin:auto;
+  text-align: center;
+  padding:2em;
+
+  .input-login {
+    background: transparent;
+    border:1px solid transparent;
+    border-bottom: 1px solid $red;
+    box-shadow: none;
+    text-align: left;
+    font-size: 0.8em;
+    padding:0.5em;
+    outline:transparent;
+    width:20em;
+    margin:1em;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+
+    &:focus {
+      animation:1s cool infinite;
+    }
+  }
+
+  .actions {
+    input {
+      box-shadow: none;
+      border:1px solid $red;
+      background: $red;
+      color:white;
+      padding:0.5em 1em;
+      margin:2em 0;
+      -webkit-transition: 0.4s ;
+      -o-transition: 0.4s ;
+      transition: 0.4s ;
+
+      &:hover {
+        border:1px solid $red;
+        background: white;
+        color:$red;
+      }
+    }
+  }
+}
