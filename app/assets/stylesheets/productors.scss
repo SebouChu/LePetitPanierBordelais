@@ -4,7 +4,17 @@
 
 @import "variables";
 
-
+#prod-show {
+  a {
+    text-transform: uppercase;
+  }
+  h2{
+    padding-left: 1em;
+    color:$red;
+    font-size: 1.5em;
+  }
+  padding:3em;
+}
 .productor-items{
   padding:3em;
   display: flex;

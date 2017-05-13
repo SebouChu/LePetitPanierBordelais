@@ -4,6 +4,18 @@
 
 @import "variables";
 
+#serv-show {
+  a {
+    text-transform: uppercase;
+  }
+  h2{
+    padding-left: 1em;
+    color:$red;
+    font-size: 1.5em;
+  }
+  padding:3em;
+}
+
 .red-button {
   display: block;
   padding:0.4em;

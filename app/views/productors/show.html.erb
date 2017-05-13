@@ -1,43 +1,49 @@
 <% content_for :pagetitle do %><%= @productor.name %><% end %>
 <% content_for :pagename do %><%= @productor.name %><% end %>
-<%= link_to "Retour", "#", onclick: "history.back()" %>
 
-<% if @productor.image %>
-  <h2>Image</h2>
-  <% image_tag @productor.image %>
-<%end%>
+<div id="prod-show">
 
-<% if @productor.content %>
-  <h2>Description</h2>
-  <p><%= @productor.content %></p>
-<%end%>
+  <% if @productor.image %>
+    <h2>Image</h2>
+    <% image_tag @productor.image %>
+  <%end%>
 
-<h2>Produits</h2>
-<p><%= @productor.products %></p>
+  <% if @productor.content %>
+    <h2>Description</h2>
+    <p><%= @productor.content %></p>
+  <%end%>
 
-<% if @productor.wineapp %>
-<h2>Apppelation de vin</h2>
-<p><%= @productor.wineapp %></p>
-<% end %>
+  <h2>Produits</h2>
+  <p><%= @productor.products %></p>
 
-<h2>Localisation</h2>
+  <% if @productor.wineapp %>
+  <h2>Apppelation de vin</h2>
+  <p><%= @productor.wineapp %></p>
+  <% end %>
 
-<% if @productor.onsite %>
-<h3>Sur site</h3>
-<p><%= @productor.onsite %></p>
-<% end %>
+  <h2>Localisation</h2>
 
-<% if @productor.market %>
-<h3>Marchés</h3>
-<p><%= @productor.market %></p>
-<% end %>
+  <% if @productor.onsite %>
+  <h3>Sur site</h3>
+  <p><%= @productor.onsite %></p>
+  <% end %>
 
-<% if @productor.amap %>
-<h3>AMAP</h3>
-<p><%= @productor.amap %></p>
-<% end %>
+  <% if @productor.market %>
+  <h3>Marchés</h3>
+  <p><%= @productor.market %></p>
+  <% end %>
 
-<% if @productor.other %>
-<h3>Autres</h3>
-<p><%= @productor.other %></p>
-<% end %>
+  <% if @productor.amap %>
+  <h3>AMAP</h3>
+  <p><%= @productor.amap %></p>
+  <% end %>
+
+  <% if @productor.other %>
+  <h3>Autres</h3>
+  <p><%= @productor.other %></p>
+  <% end %>
+
+  <br>
+  <%= link_to "Retour", "#", onclick: "history.back()" %>
+
+</div>
