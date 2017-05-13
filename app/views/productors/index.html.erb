@@ -24,7 +24,7 @@
   <div class="carousel" id="carousel-ele">
     <% @eleveurs.each do |e| %>
     <div class="item-carousel" data-animation="opacity">
-      <% if a.image %>
+      <% if e.image %>
         <%= link_to image_tag(e.image), productor_path(e) %>
       <% else %>
         <%= link_to image_tag('eleveurs.jpg'), productor_path(e) %>
