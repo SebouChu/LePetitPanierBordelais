@@ -11,7 +11,9 @@ var initCarousel = function() {
     if(carouselDiv) {
       var carousel = new Carousel((carouselDiv), {
         autoload: true,
-        interval: 3000
+        interval: 3000,
+        displayArrowSelectors: false,
+        displayButtonSelectors: false
       });
       carousel.launch();
     }

@@ -163,6 +163,10 @@
      display: flex;
      flex-direction: row;
      justify-content: center;
+     height:100%;
+     img {
+       background-size: cover;
+     }
    }
 
    #about {
@@ -204,7 +208,7 @@
   }
 
   #contact {
-    
+
   }
 
  footer {
@@ -243,16 +247,14 @@
    #text {
      margin:auto !important;
    }
-   #vendeurs .right-part{
+   #vendeurs .right-part, #producteurs .left-part{
       width:0% !important;
+      height:0%;
    }
-   #vendeurs .left-part {
+   #vendeurs .left-part, #producteurs .right-part {
      width:100% !important;
+     height:100%;
+     margin-bottom: 2em;
    }
-   #producteurs .left-part {
-     width:0% !important;
-   }
-   #producteurs .right-part {
-     width:100% !important;
-   }
+
  }
