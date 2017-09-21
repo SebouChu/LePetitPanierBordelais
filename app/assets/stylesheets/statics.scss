@@ -185,6 +185,7 @@
        margin-right: 3em;
      }
    }
+
    #vendeurs {
      .left-part {
         text-align: left;
@@ -229,6 +230,32 @@
    }
  }
 
+ .team-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+   .team-member {
+     margin: auto 10px;
+     text-align: center;
+     img {
+       width: 200px;
+       height: 200px;
+     }
+
+     .member-name {
+       font-weight: bold;
+       margin-top: 5px;
+       margin-bottom: 0px;
+     }
+
+     .member-role {
+       font-style: italic;
+       margin-top: 3px;
+     }
+   }
+ }
+
  @media screen and (max-width:720px){
    #header {
      span {
@@ -239,6 +266,8 @@
      width:100% !important;
    }
  }
+
+
 
  @media screen and (max-width:1210px){
    #about {
