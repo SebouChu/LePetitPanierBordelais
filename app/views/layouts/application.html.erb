@@ -7,20 +7,20 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <meta charset="utf-8">
-    <meta name="description" content="<%= yield :pagemeta %>">
+    <meta name="description" content="<%= yield :meta_description  %>">
     <meta name="keywords" content="petit, panier, bordelais, bordeaux, sain, local, fruits, legumes, manger, marche, restaurant, producteur, produit, frais, ecolo, agriculteur, itineraire, balade, decouverte, bio">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@LePetitPanierB">
     <meta name="twitter:title" content="Le Petit Panier Bordelais">
-    <meta name="twitter:description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
+    <meta name="twitter:description" content="<%= yield :twitter_description %>">
     <meta name="twitter:image" content="http://lepetitpanierbordelais.fr/images/logo.png">
     <meta name="twitter:image:alt" content="Le Petit Panier Bordelais, les producteurs locaux bordelais.">
     <meta property="og:title" content="Le Petit Panier Bordelais">
     <meta property="og:type" content="producteur">
     <meta property="og:url" content="https://lepetitpanierbordelais.fr/">
     <meta property="og:image" content="http://lepetitpanierbordelais.fr/images/logo.png">
-    <meta property="og:description" content="Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.">
+    <meta property="og:description" content="<%= yield :og_description %>">
     <meta property="og:email" content="contact@lepetitpanierbordelais.fr">
     <link rel="canonical" href="http://lepetitpanierbordelais.fr<%= request.original_fullpath %>" />
     <link rel="publisher" href="https://plus.google.com/u/1/108017467012918746077" />
