@@ -69,24 +69,4 @@
    width:40%;
    margin-bottom: 1em;
   }
-  .red-button {
-    display: block;
-    padding:0.4em;
-    background-color: $red;
-    color:white;
-    letter-spacing: 2px;
-    font-size: 0.8em;
-    width:12em;
-    text-align: center;
-    margin:2em auto 0;
-    border:1px solid transparent;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-    &:hover {
-      background-color: white;
-      border: 1px solid $red;
-      color:$red;
-    }
-  }
 }

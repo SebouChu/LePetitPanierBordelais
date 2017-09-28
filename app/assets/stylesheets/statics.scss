@@ -31,19 +31,30 @@
    font-weight: lighter;
  }
 
- h1 {
+ .red-button {
+   display: block;
+   padding:0.4em;
+   background-color: $red;
+   color:white;
+   text-decoration: none;
+   letter-spacing: 2px;
+   font-size: 0.8em;
+   width:12em;
    text-align: center;
+   margin:auto;
+   border:1px solid transparent;
+   -webkit-transition: 0.4s;
+   -o-transition: 0.4s;
+   transition: 0.4s;
+   &:hover {
+     background-color: white;
+     border: 1px solid $red;
+     color:$red;
+   }
  }
 
- a, a:focus,a:visited {
-   text-decoration: none;
-   color:black;
-   -webkit-transition: 0.3s;
-   -o-transition: 0.3s;
-   transition: 0.3s;
-  &:hover,&.current{
-    color:$red;
-  }
+ h1 {
+   text-align: center;
  }
 
  #baseline {
@@ -103,6 +114,17 @@
      font-size: 1.2em;
      margin:1em 2em 3em;
 
+     a, a:focus,a:visited {
+       text-decoration: none;
+       color:black;
+       -webkit-transition: 0.3s;
+       -o-transition: 0.3s;
+       transition: 0.3s;
+      &:hover,&.current{
+        color:$red;
+      }
+     }
+
      span {
        color:$red;
        padding:0 0.5em;
@@ -135,27 +157,6 @@
        border-bottom: 1px solid $red;
        padding-bottom:0.8em;
        margin:0.8em 2em 1em;
-     }
-   }
-
-   .red-button {
-     display: block;
-     padding:0.4em;
-     background-color: $red;
-     color:white;
-     letter-spacing: 2px;
-     font-size: 0.8em;
-     width:12em;
-     text-align: center;
-     margin:auto;
-     border:1px solid transparent;
-     -webkit-transition: 0.4s;
-     -o-transition: 0.4s;
-     transition: 0.4s;
-     &:hover {
-       background-color: white;
-       border: 1px solid $red;
-       color:$red;
      }
    }
 
@@ -221,6 +222,40 @@
     }
     p {
       color: black;
+    }
+  }
+
+  #articles {
+    width:60vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+
+    .article-container {
+      padding:1em auto;
+      margin:1em;
+      color:black;
+      text-align: center;
+      border-left:1px solid black;
+      p {
+        cursor: pointer;
+        color:$red;
+      }
+      .article-content {
+        display: none;
+        text-align: left;
+        padding:1em 0 0.5em 1em;
+
+        h3 {
+          font-weight: bold;
+          margin-left:1em;
+        }
+
+        p {
+          color:black;
+        }
+      }
     }
   }
 
