@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'statics#index'
   get '/about' => 'statics#about'
   get '/contact' => 'statics#contact'
+  get '/articles' => 'statics#article'
 
   # Productors
   get '/producteurs' => 'productors#index', as: :productors

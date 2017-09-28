@@ -8,4 +8,7 @@ class StaticsController < ApplicationController
 
   def contact
   end
+
+  def article
+  end
 end

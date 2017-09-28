@@ -1,5 +1,6 @@
 <% content_for :pagetitle do %>Accueil<% end %>
 <% content_for :pagename do %>Le Petit Panier Bordelais<% end %>
+<% content_for :pagemeta do %> Le Petit Panier Bordelais vous fait découvrir les producteurs locaux bordelais, ainsi que les restaurants et marchés proposant leurs produits sains et frais.<% end %>
 
 <div id="homepage">
   <div id="about">
@@ -9,6 +10,8 @@
          L’itinéraire reste un plus, l’axe principal est le référencement des producteurs et des produits.
       </p>
       <p>Finalement, Le Petit Panier Bordelais est une source d’information, de découverte, de surprise, et en bonus de divertissement. Ce service ne proposera pas d’échanges entre les utilisateurs, ce qui n’implique pas de modération, toutefois les utilisateurs ou producteurs pourront proposer des magasins, restaurants, producteurs, produits à ajouter à notre plateforme pour l’enrichir.</p>
+
+      <%= link_to 'Découvrir nos articles', articles_path ,class:"red-button" %>
     </div>
   </div>
 
