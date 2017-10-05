@@ -10,38 +10,16 @@
 
   <h3>Nos derniers restaurants</h3>
 
-  <div class="carousel" id="carousel-restos">
-     <% @restaurants.each do |r| %>
-       <div class="item-carousel" data-animation="opacity">
-         <% if r.image %>
-         <%= link_to image_tag(r.image), service_path(r) %>
-         <% else %>
-         <%= link_to image_tag('bread.jpg'), service_path(r) %>
-         <% end %>
-         <p><%= r.name %></p>
-       </div>
-     <%end%>
-  </div>
-
-  <p><%= link_to "Voir plus", restaurants_path, class:"red-button" %></p>
+  <%= link_to restaurants_path do %>
+  <%= image_tag('bread.jpg', class: "serv-index-img") %>
+  <% end %>
 
 <!-- MARCHE -->
 
   <h3>Nos derniers marchés</h3>
 
-  <div class="carousel" id="carousel-marches">
-      <% @marches.each do |m| %>
-        <div class="item-carousel" data-animation="opacity">
-          <% if m.image %>
-          <%= link_to image_tag(m.image), service_path(m) %>
-          <% else %>
-          <%= link_to image_tag('paysans.jpg'), service_path(m) %>
-          <% end %>
-          <p><%= m.name %></p>
-        </div>
-      <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", marches_path, class:"red-button" %></p>
+  <%= link_to marches_path do %>
+  <%= image_tag('paysans.jpg', class: "serv-index-img") %>
+  <% end %>
 
 </div>

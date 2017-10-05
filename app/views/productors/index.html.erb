@@ -7,86 +7,31 @@
 <div id="producteurs-index">
   <h3>Nos derniers apiculteurs</h3>
 
-  <div class="carousel" id="carousel-api">
-    <% @apiculteurs.each do |a| %>
-    <div class="item-carousel" data-animation="opacity">
-      <% if a.image %>
-        <%= link_to image_tag(a.image), productor_path(a) %>
-      <% else %>
-        <%= link_to image_tag('apiculteurs.jpg'), productor_path(a) %>
-      <% end %>
-      <p><%= a.name %></p>
-    </div>
-    <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", apiculteurs_path, class:"red-button"%></p>
+  <%= link_to apiculteurs_path do %>
+  <%= image_tag('apiculteurs.jpg', class: "prod-index-img") %>
+  <% end %>
 
   <h3>Nos derniers éleveurs</h3>
 
-  <div class="carousel" id="carousel-ele">
-    <% @eleveurs.each do |e| %>
-    <div class="item-carousel" data-animation="opacity">
-      <% if e.image %>
-        <%= link_to image_tag(e.image), productor_path(e) %>
-      <% else %>
-        <%= link_to image_tag('eleveurs.jpg'), productor_path(e) %>
-      <% end %>
-      <p><%= e.name %></p>
-    </div>
-    <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", eleveurs_path, class:"red-button"%></p>
+  <%= link_to eleveurs_path do %>
+  <%= image_tag('eleveurs.jpg', class: "prod-index-img") %>
+  <% end %>
 
   <h3>Nos derniers horticulteurs</h3>
 
-  <div class="carousel" id="carousel-hor">
-    <% @horticulteurs.each do |h| %>
-    <div class="item-carousel" data-animation="opacity">
-      <% if h.image %>
-        <%= link_to image_tag(h.image), productor_path(h) %>
-      <% else %>
-        <%= link_to image_tag('horticulteurs.jpg'), productor_path(h) %>
-      <% end %>
-      <p><%= h.name %></p>
-    </div>
-    <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", horticulteurs_path, class:"red-button"%></p>
+  <%= link_to horticulteurs_path do %>
+  <%= image_tag('horticulteurs.jpg', class: "prod-index-img") %>
+  <% end %>
 
   <h3>Nos derniers maraîchers</h3>
 
-  <div class="carousel" id="carousel-mar">
-    <% @maraichers.each do |m| %>
-    <div class="item-carousel" data-animation="opacity">
-      <% if m.image %>
-        <%= link_to image_tag(m.image), productor_path(m) %>
-      <% else %>
-        <%= link_to image_tag('maraichers.jpg'), productor_path(m) %>
-      <% end %>
-      <p><%= m.name %></p>
-    </div>
-    <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", maraichers_path, class:"red-button"%></p>
+  <%= link_to maraichers_path do %>
+  <%= image_tag('maraichers.jpg', class: "prod-index-img") %>
+  <% end %>
 
   <h3>Nos derniers viticulteurs</h3>
 
-  <div class="carousel" id="carousel-vit">
-    <% @viticulteurs.each do |v| %>
-    <div class="item-carousel" data-animation="opacity">
-      <% if v.image %>
-        <%= link_to image_tag(v.image), productor_path(v) %>
-      <% else %>
-        <%= link_to image_tag('viticulteurs.jpg'), productor_path(v) %>
-      <% end %>
-      <p><%= v.name %></p>
-    </div>
-    <% end %>
-  </div>
-
-  <p><%= link_to "Voir plus", viticulteurs_path, class:"red-button"%></p>
+  <%= link_to viticulteurs_path do %>
+  <%= image_tag('viticulteurs.jpg', class: "prod-index-img") %>
+  <% end %>
 </div>
