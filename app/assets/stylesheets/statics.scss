@@ -5,7 +5,6 @@
 
 @import "variables";
 
-
  html {
    margin:0;
    color:black;
@@ -42,6 +41,62 @@
  h1 {
    text-align: center;
  }
+
+ .display-none {
+   display: none !important;
+ }
+
+ .header-burger {
+    position: fixed;
+    top:10px;
+    right:10px;
+    background: #FCFBF7;
+    cursor: pointer;
+    padding:0.3em 0.6em;
+    border-radius: 5px;
+    display: flex;
+    z-index: 9999;
+    border:1px solid transparent;
+    p {
+      margin:0;
+      font-size: 20px;
+      font-weight: 100;
+    }
+ }
+ .header-burger-content {
+   position: fixed;
+   top: 0;
+   left:0;
+   width:100vw;
+   height:auto;
+   background-color: #FCFBF7;
+   margin:0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding-bottom: 0.3em;
+
+   a, a:focus,a:visited {
+     text-decoration: none;
+     color:black;
+     -webkit-transition: 0.3s;
+     -o-transition: 0.3s;
+     transition: 0.3s;
+      &:hover,&.current{
+        color:$red;
+      }
+    }
+
+   .menu-item {
+     margin:0.5em 0;
+   }
+
+   #accueil-item {
+     margin-top: 3em;
+   }
+ }
+
 
  #baseline {
    font-family: 'Snell Roundhand';
@@ -267,12 +322,16 @@
 
  @media screen and (max-width:720px){
    #header {
+     display: none !important;
      span {
        display: none;
      }
    }
    .body-content {
      width:100% !important;
+   }
+   .header-burger {
+     display: block;
    }
  }
 

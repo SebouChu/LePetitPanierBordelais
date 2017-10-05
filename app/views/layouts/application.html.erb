@@ -33,6 +33,17 @@
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
+    <div class="header-burger display-none">
+      <p>Menu</p>
+    </div>
+    <div class="header-burger-content display-none">
+      <%= link_to "Accueil", root_path, class:'menu-item', id:"accueil-item" %>
+      <%= link_to "Services", services_path, class:'menu-item', id:"services-item" %>
+      <%= link_to "Producteurs", productors_path, class:'menu-item', id:"producteurs-item" %>
+      <%= link_to "À propos", about_path, class:'menu-item', id:"about-item" %>
+      <%= link_to "Contact", contact_path, class:'menu-item', id:"contact-item" %>
+    </div>
+
     <% if @biglogo %>
       <%= link_to image_tag('logo.png'), root_path, alt:"logo", id:"logo" %>
       <p id="baseline">La qualité saine et locale, pour le plaisir des plus raffinés.</p>
