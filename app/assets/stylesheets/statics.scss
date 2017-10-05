@@ -46,6 +46,10 @@
    display: none !important;
  }
 
+ .color-red {
+   color:$red;
+ }
+
  .header-burger {
     position: fixed;
     top:10px;
