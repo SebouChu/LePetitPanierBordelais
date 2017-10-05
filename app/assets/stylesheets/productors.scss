@@ -16,7 +16,7 @@
   padding:3em;
 }
 .productor-items{
-  padding:3em;
+  padding:3em 2em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -25,6 +25,7 @@
 
   .item-container {
     position: relative;
+    min-width: 15em;
     width:30%;
     margin:0;
     margin-right: 4px;
