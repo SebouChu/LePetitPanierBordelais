@@ -5,20 +5,6 @@
 
 @import "variables";
 
-@keyframes cool {
-  0%{
-    transform-origin: 50% 50%;
-    transform: translateY(10px);
-  }
-  50%{
-    transform-origin: 50% 50%;
-    transform: translateY(5px);
-  }
-  100% {
-    transform-origin: 50% 50%;
-    transform: translateY(10px);
-  }
-}
 
  html {
    margin:0;
@@ -85,16 +71,6 @@
   min-width: 10em;
  }
 }
-
-
- #arrow {
-   position:absolute;
-   bottom:30px;
-   right:50%;
-   width:2em;
-   filter: contrast(0%);
-   animation: cool 2s infinite;
- }
 
  .body-content {
    width:74%;
